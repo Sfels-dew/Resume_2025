@@ -1,0 +1,172 @@
+/* GLOBAL RESETS AND FONT STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light background for the page */
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* RESUME CONTAINER */
+.resume-container {
+    width: 100%;
+    max-width: 900px; /* Standard A4/Letter size approximation */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER STYLING */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #0077b6; /* Professional blue line */
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 0 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.contact-info i {
+    color: #0077b6;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    color: #666;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #0077b6;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT SECTIONS */
+main {
+    padding-top: 10px;
+}
+
+.section-box {
+    margin-bottom: 30px;
+}
+
+.section-box h3 {
+    font-size: 1.4em;
+    color: #0077b6;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.section-box h3 i {
+    margin-right: 10px;
+}
+
+/* SKILLS SECTION */
+.skills h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.skills p {
+    font-size: 0.95em;
+    color: #555;
+    padding-left: 15px;
+}
+
+/* EXPERIENCE & EDUCATION STYLING */
+.job-item, .project-item, .education-item {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #f0f0f0;
+}
+
+.job-item h4, .education-item h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.company, .institution {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 2px;
+}
+
+.dates {
+    color: #0077b6;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.job-item ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    font-size: 0.95em;
+}
+
+.job-item li {
+    margin-bottom: 5px;
+}
+
+/* PROJECT STYLING */
+.project-item h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.project-item p.tech-stack {
+    color: #0077b6;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* PRINT MEDIA QUERIES (for clean printing) */
+@media print {
+    body {
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+    .resume-container {
+        box-shadow: none;
+        max-width: none;
+        width: 100%;
+        padding: 0;
+    }
+}
